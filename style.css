@@ -62,7 +62,7 @@ body {
 
 .home {
     height: 100vh;
-    background: url('images/Site_CEO2.jpg') no-repeat;
+    background: url('images/Site_CEO.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display:flex;
@@ -108,7 +108,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.4s;
+    animation-delay: .8s;
 }
 .home-content p {
     position: relative;
@@ -125,7 +125,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
+    animation-delay: 1.5s;
 }    
 .home-content .btn-box {
     position: relative;
@@ -144,7 +144,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.0s;
+    animation-delay: 1.7s;
     z-index: 2;
 }
 .btn-box a {
@@ -218,7 +218,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.4s;
+    animation-delay: 2.0s;
     z-index: 2;
 }
 .home-sci a {
@@ -281,7 +281,7 @@ body {
     height: 100%;
     background: #081b29;
     animation: showRight 1s ease forwards;
-    animation-delay: 2.8s;
+    animation-delay: 2.4s;
     z-index: 100;
 }
 .home-imgHover:hover {
