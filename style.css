@@ -461,7 +461,7 @@ body {
     pointer-events: none;
 }
 
-.-imgHover::after {
+.about-imgHover::after {
     content: '';
     position: absolute;
     top: 0;
