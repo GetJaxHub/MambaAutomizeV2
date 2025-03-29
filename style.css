@@ -289,19 +289,6 @@ body {
     opacity: .8;
 }
     
-/* KEYFRAMES ANIMATION */
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes manipActiveHover {
-    100% {
-        pointer-events: auto;
-    }
-}
-
 /* About Part */
 
 .about-page {
@@ -491,3 +478,15 @@ body {
     opacity: .8;
 }
     
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
