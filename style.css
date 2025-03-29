@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #081b29
+    background: #081b29;
 }
 
 .header {
@@ -105,16 +105,16 @@ body {
     color:#00abf0;
 }
 
-.btn-box a:ntn-child(2) {
+.btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0;
 }
 
-.btn-box a:ntn-child(2):hover {
+.btn-box a:nth-child(2):hover {
     color: #081b29;
 }
 
-.btn-box a:ntn-child(2):before {
+.btn-box a:nth-child(2):before {
     color: #00abf0;
 }
 
@@ -131,6 +131,7 @@ body {
 }
 
 .btn-box a:hover::before {
+    width: 100%;
 
 }
 
@@ -161,7 +162,7 @@ body {
 }
 
 .home-sci a:hover {
-    color: #08ab29;
+    color: #081b29;
 }
 
 
@@ -173,7 +174,7 @@ body {
     width: 0;
     height: 100%;
     background: #00abf0;
-    z-index: 1;
+    z-index: -1;
     transition: .5s;
 }
 
