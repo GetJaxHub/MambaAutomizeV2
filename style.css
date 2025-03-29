@@ -49,6 +49,7 @@ body {
 
 .home {
     height: 100vh;
+    /*background: url('images/Site_CEO2.jpg'); no-repeat; */
     display:flex;
     align-items: center;
     padding: 0 10%;
