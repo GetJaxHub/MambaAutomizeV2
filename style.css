@@ -291,7 +291,7 @@ body {
     
 /* About Part */
 
-.about-page {
+.about {
     height: 100vh;
     background: url('images/AboutCEO2.png') no-repeat;
     background-size: cover;
@@ -432,8 +432,6 @@ body {
 
 }
 
-}
-
 .about-sci {
     position: absolute;
     bottom: 40px;
@@ -521,7 +519,7 @@ body {
     background: #081b29;
     opacity: .8;
 }
-    
+ 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
     100% {
