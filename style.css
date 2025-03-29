@@ -301,3 +301,15 @@ body {
         pointer-events: auto;
     }
 }
+
+/* About Part */
+
+.about {
+    height: 100vh;
+    background: url('images/Site_CEO.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
