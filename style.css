@@ -115,7 +115,7 @@ body {
     color: #081b29;
 }
 
-.btn-box a:nth-child(2):before {
+.btn-box a:nth-child(2)::before {
     color: #00abf0;
 }
 
