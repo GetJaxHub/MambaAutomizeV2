@@ -116,7 +116,7 @@ body {
 }
 
 .btn-box a:nth-child(2)::before {
-    color: #00abf0;
+    background: #00abf0;
 }
 
 .btn-box a::before {
