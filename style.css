@@ -91,7 +91,7 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-    
+}   
 .home-content h3 {
     position: relative;
     font-size: 32px;
@@ -109,7 +109,7 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.4s;
-
+}
 .home-content p {
     position: relative;
     font-size: 16px;
@@ -126,7 +126,7 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.7s;
-    
+}    
 .home-content .btn-box {
     position: relative;
     display: flex;
@@ -146,7 +146,7 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 2.0s;
     z-index: 2;
-
+}
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -209,7 +209,7 @@ body {
     justify-content: space-between;
 }
 
-.home-sci ::before {
+.home-sci::before {
     content: '';
     position: absolute;
     top: 0;
@@ -220,7 +220,7 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 2.4s;
     z-index: 2;
-
+}
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -272,7 +272,7 @@ body {
     pointer-events: none;
 }
 
-.home-imgHover ::after {
+.home-imgHover::after {
     content: '';
     position: absolute;
     top: 0;
@@ -283,10 +283,10 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 2.8s;
     z-index: 100;
-
+}
 .home-imgHover:hover {
     background: #081b29;
-    opacity: .8s
+    opacity: .8;
 }
     
 /* KEYFRAMES ANIMATION */
@@ -299,5 +299,5 @@ body {
 @keyframes manipActiveHover {
     100% {
         pointer-events: auto;
-
+    }
 }
