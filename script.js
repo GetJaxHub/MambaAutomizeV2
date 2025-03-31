@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const automateBtn = document.getElementById("automate-btn");
     const optimizeBtn = document.getElementById("optimize-btn");
-    const animatedText = document.getElementById("animated-text");
+    const animatedText = document.getElementById("animated-home");
 
     function animateText(text) {
         animatedText.classList.remove("show"); // Reset animation
