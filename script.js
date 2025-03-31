@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     emailBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedContactText, "Jakyz.Mamba@mambaautomize.com");
+        animateText(animatedContactText, "Jakyz.Mamba@MambaAutomize.com");
     });
 
 });
