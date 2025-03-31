@@ -11,23 +11,14 @@ body {
     color: #ededed;
     overflow-x: hidden;
     width: 100%;
-    /* Added to prevent text overflow */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
-/* Ensure text elements wrap properly */
-p, a, li, .service-description {
-    word-break: break-word;
-}
-
-/* HEADER SECTION (unchanged) */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 5%; /* Reduced padding for mobile */
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -36,11 +27,12 @@ p, a, li, .service-description {
 }
 
 .logo {
-    position: relative;  
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
+  position: relative;  
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  
 }
 
 .logo::before {
@@ -53,41 +45,40 @@ p, a, li, .service-description {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-}
+
+}    
 
 .navbar a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
 }
 
 .navbar a:hover {  
-    color: #00abf0;
+  color: #00abf0;
+  
 }
 
-/* HOME SECTION (with overflow fixes) */
 .home {
     height: 100vh;
     background: url('images/Site_CEO.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display:flex;
     align-items: center;
     padding: 0 10%;
-    position: relative;
 }
 
 .home-content {
     max-width: 600px;
-    width: 100%; /* Added to prevent overflow */
 }
 
 .home-content h1 {
     position: relative;
-    font-size: clamp(40px, 5vw, 56px); /* Responsive font size */
+    font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -102,15 +93,14 @@ p, a, li, .service-description {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-}
-
+}   
 .home-content h3 {
     position: relative;
-    font-size: clamp(24px, 3vw, 32px); /* Responsive font size */
+    font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: #00abf0
 }
-
+    
 .home-content h3::before {
     content: '';
     position: absolute;
@@ -122,7 +112,6 @@ p, a, li, .service-description {
     animation: showRight 1s ease forwards;
     animation-delay: .8s;
 }
-
 .home-content p {
     position: relative;
     font-size: 16px;
@@ -139,14 +128,12 @@ p, a, li, .service-description {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
-}
-
+}    
 .home-content .btn-box {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 345px; /* Constrained width */
+    width: 345px;
     height: 50px;
 }
 
@@ -162,7 +149,6 @@ p, a, li, .service-description {
     animation-delay: 1.7s;
     z-index: 2;
 }
-
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -184,8 +170,9 @@ p, a, li, .service-description {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color:#00abf0;
 }
+
 
 .btn-box a::before {
     content: '';
@@ -201,9 +188,10 @@ p, a, li, .service-description {
 
 .btn-box a:hover::before {
     width: 100%;
+
 }
 
-/* ANIMATED TEXT (unchanged) */
+/* Animated Text */
 #animated-home {
     position: relative;
     font-size: 16px;
@@ -218,7 +206,6 @@ p, a, li, .service-description {
     transform: translateX(0);
 }
 
-/* SOCIAL ICONS (unchanged) */
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -239,7 +226,6 @@ p, a, li, .service-description {
     animation-delay: 2.0s;
     z-index: 2;
 }
-
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -278,7 +264,6 @@ p, a, li, .service-description {
     width: 100%;
 }
 
-/* IMAGE HOVER (unchanged) */
 .home-imgHover {
     position: absolute;
     top: 0;
@@ -304,19 +289,19 @@ p, a, li, .service-description {
     animation-delay: 2.4s;
     z-index: 100;
 }
-
 .home-imgHover:hover {
     background: #081b29;
     opacity: .8;
 }
+    
+/* About Part */
 
-/* ABOUT SECTION (with overflow fixes) */
 .about {
     height: 100vh;
     background: url('images/AboutCEO2.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: flex-end;
     padding: 0 10%;
@@ -324,10 +309,183 @@ p, a, li, .service-description {
 
 .about-content {
     max-width: 600px;
-    width: 100%; /* Added to prevent overflow */
 }
 
-/* SERVICES SECTION (with overflow fixes) */
+.about-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}   
+.about-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0
+}
+    
+.about-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+}
+.about-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.about-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+}    
+.about-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.about-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
+    z-index: 2;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color:#00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+.about-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.0s;
+    z-index: 2;
+}
+.about-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.about-sci a:hover {
+    color: #081b29;
+}
+
+.about-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.about-sci a:hover::before {
+    width: 100%;
+}
+
+/* Services Part */
+
+/* Main Section */
 .services {
     height: 100vh;
     background: url('images/Services.png') no-repeat;
@@ -335,23 +493,96 @@ p, a, li, .service-description {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centers the content vertically and horizontally */
     padding: 0 10%;
 }
 
+/* Content Container */
 .services-content {
-    max-width: 1200px;
-    width: 100%; /* Added to prevent overflow */
+    max-width: 1200px; /* Adjusted to fit more content */
     text-align: center;
 }
 
-/* CONTACT SECTION (with overflow fixes) */
+/* Title */
+.services-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.services-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}   
+
+.services-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.0s;
+    z-index: 2;
+}
+
+.services-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.services-sci a:hover {
+    color: #081b29;
+}
+
+.services-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.services-sci a:hover::before {
+    width: 100%;
+}
+
+
+/* Contact */
+
 .contact {
     height: 100vh;
     background: url('images/ContactPage.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
@@ -359,16 +590,203 @@ p, a, li, .service-description {
 
 .contact-content {
     max-width: 600px;
-    width: 100%; /* Added to prevent overflow */
 }
 
-/* CAREERS SECTION (with overflow fixes) */
+.contact-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contact-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}   
+.contact-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0
+}
+    
+.contact-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+}
+.contact-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.contact-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+}    
+.contact-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.contact-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
+    z-index: 2;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color:#00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+/* Animated Text */
+#animated-contact {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#animated-contact.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.contact-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.0s;
+    z-index: 2;
+}
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact-sci a:hover {
+    color: #081b29;
+}
+
+.contact-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact-sci a:hover::before {
+    width: 100%;
+}
+
+/* Career Part */
+
 .careers {
     height: 100vh;
     background: url('images/WIP_Page.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
@@ -376,10 +794,89 @@ p, a, li, .service-description {
 
 .careers-content {
     max-width: 600px;
-    width: 100%; /* Added to prevent overflow */
 }
 
-/* KEYFRAMES ANIMATION (unchanged) */
+.careers-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #00abf0
+
+}
+
+.careers-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}   
+
+.careers-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.careers-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.0s;
+    z-index: 2;
+}
+.careers-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.careers-sci a:hover {
+    color: #081b29;
+}
+
+.careers-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.careers-sci a:hover::before {
+    width: 100%;
+}
+
+
+/* KEYFRAMES ANIMATION */
 @keyframes showRight {
     100% {
         width: 0;
@@ -389,47 +886,5 @@ p, a, li, .service-description {
 @keyframes manipActiveHover {
     100% {
         pointer-events: auto;
-    }
-}
-
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 768px) {
-    .header {
-        padding: 15px 5%;
-    }
-    
-    .navbar a {
-        margin-left: 15px;
-        font-size: 16px;
-    }
-    
-    .home, .about, .services, .contact, .careers {
-        padding: 0 5%;
-    }
-    
-    .home-imgHover {
-        width: 100%;
-        right: 0;
-    }
-    
-    .btn-box {
-        flex-direction: column;
-        height: auto;
-        gap: 15px;
-    }
-    
-    .btn-box a {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .home-imgHover {
-        display: none;
-    }
-    
-    .navbar a {
-        margin-left: 10px;
-        font-size: 14px;
     }
 }
