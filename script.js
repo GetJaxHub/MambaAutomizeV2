@@ -44,22 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     serviceBtn1?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+        animateText(animatedServiceText, "Streamline your workflows with our business process automation solutions. Reduce manual effort, minimize human errors, and free up valuable resources. Tailored strategies to fit your unique business needs.");
     });
     serviceBtn2?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+        animateText(animatedServiceText, "Identify inefficiencies and optimize your processes with our expert consulting services. Achieve measurable results and enhance overall productivity. Collaborative approach for lasting improvements.");
     });
     serviceBtn3?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+        animateText(animatedServiceText, "Our website creation services help businesses build a strong online presence with custom design, SEO optimization, and secure hosting. We deliver functional, responsive websites that enhance user experience and drive business growth.");
     });
     serviceBtn4?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+        animateText(animatedServiceText, "Our IT training and support services help you maximize the value of your technology investments. We offer a range of services, including end-user training, technical support, and software training to help you get the most from your technology.");
     });
     serviceBtn5?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+        animateText(animatedServiceText, "We understand that every business is unique. Our custom solutions are designed to address your specific challenges and opportunities. Maximize efficiency and achieve your strategic objectives.");
     });
 });
