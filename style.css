@@ -521,7 +521,7 @@ body {
 }   
 .services-content h3 {
     position: absolute;
-    top: 180px; /* Adjust to move lower if needed */
+    top: 210px; /* Adjust to move lower if needed */
     right: 80px; /* Moves the h1 to the right */
     font-size: 32px;
     font-weight: 700;
@@ -541,7 +541,7 @@ body {
 }    
 
 .services-content .btn-box {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 345px;
