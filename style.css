@@ -484,7 +484,8 @@ body {
 /* Services Part */
 
 .services {
-    height: 100vh;
+    overflow: auto;
+    max-height: 100vh;
     background: url('images/Services.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -495,6 +496,10 @@ body {
 }
 
 .services-content {
+    max-width: 90%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     max-width: 600px;
 }
 
