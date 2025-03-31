@@ -520,12 +520,14 @@ body {
 }
 
 .services-content {
-    max-width: 600px;
-}
+    max-width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 
 .services-content h1 {
     position: relative;
-    font-size: 56px;
+    font-size: clamp(24px, 5vw, 56px); /* Min: 24px, Max: 56px */
     font-weight: 700;
     line-height: 1.2;
 }
@@ -543,7 +545,7 @@ body {
 }   
 .services-content h3 {
     position: relative;
-    font-size: 32px;
+    font-size: clamp(18px, 3vw, 32px);
     font-weight: 700;
     color: #00abf0
 }
