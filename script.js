@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     optimizeBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit your business!");
+        animateText(animatedText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit for your business!");
     });
 
     missionBtn?.addEventListener("click", function (event) {
