@@ -512,8 +512,7 @@ body {
 }
 
 .services-content h1 {
-    position: fixed;
-    align-items: top;
+    position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -534,9 +533,12 @@ body {
 .services-content .btn-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Align them in the center (optional) */
+    align-items: center; /* Center them horizontally */
     width: 345px;
-    height: 50px;
+    gap: 10px; /* Adds space between buttons */
+    
 }
 
 .services-content .btn-box::before {
