@@ -521,9 +521,7 @@ body {
 
 .services-content {
     max-width: 100%;
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    text-align: left;
 
 .services-content h1 {
     position: relative;
