@@ -488,11 +488,10 @@ body {
     background: url('images/Services.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: flex-start; /* Aligns content to the top */
-    justify-content: flex-end; /* Moves content to the right */
-    padding: 20px 10%; /* Adjusts spacing */
-    position: relative; /* Ensures absolute elements stay within this section */
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10%;
 }
 
 .services-content {
@@ -500,9 +499,7 @@ body {
 }
 
 .services-content h1 {
-    position: absolute;
-    top: 150px; /* Adjust to move lower if needed */
-    right: 80px; /* Moves the h1 to the right */
+    position: relative;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -520,9 +517,7 @@ body {
     animation-delay: .4s;
 }   
 .services-content h3 {
-    position: absolute;
-    top: 310px; /* Adjust to move lower if needed */
-    right: 80px; /* Moves the h1 to the right */
+    position: relative;
     font-size: 32px;
     font-weight: 700;
     color: #00abf0
@@ -538,18 +533,30 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .8s;
-}    
+}
+.services-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
 
+.services-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
+}    
 .services-content .btn-box {
-    position: absolute; /* Position relative to the page */
-    top: 50%; /* Center vertically */
-    right: 20px; /* Distance from the right side */
-    transform: translateY(-50%); /* Perfect vertical centering */
+    position: relative;
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Spacing between buttons */
-    width: auto; /* Allow buttons to determine width */
-    height: auto; /* Allow flexible height */
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
 }
 
 .services-content .btn-box::before {
@@ -564,14 +571,13 @@ body {
     animation-delay: 1.7s;
     z-index: 2;
 }
-
 .btn-box a {
-    position: relative; /* Allow stacking inside flex container */
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px; /* Set fixed height */
+    width: 150px;
+    height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
@@ -580,12 +586,13 @@ body {
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    text-align: center;
+    z-index: 1;
+    overflow: hidden;
     transition: .5s;
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color:#00abf0;
 }
 
 .btn-box a::before {
@@ -602,21 +609,7 @@ body {
 
 .btn-box a:hover::before {
     width: 100%;
-}
 
-/* Animated Text */
-#animated-services {
-    position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-#animated-services.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .services-sci {
@@ -676,7 +669,6 @@ body {
 .services-sci a:hover::before {
     width: 100%;
 }
- 
 
 /* Contact */
 
