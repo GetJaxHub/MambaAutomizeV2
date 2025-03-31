@@ -856,18 +856,35 @@ body {
 
 .careers {
     height: 100vh;
-    background: url('images/WIP_Page.png') no-repeat;
+    background: url('images/Site_CEO.png') no-repeat;
     background-size: cover;
     background-position: center;
     display:flex;
     align-items: center;
-    justify-content: flex-end;
     padding: 0 10%;
 }
 
 .careers-content {
     max-width: 600px;
 }
+
+.careers-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.careers-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
 
 .careers-sci {
     position: absolute;
