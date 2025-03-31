@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const whatsappBtn = document.getElementById("whatsapp-btn");
     const emailBtn = document.getElementById("email-btn");
     const animatedContactText = document.getElementById("animated-contact");
+    const animatedServiceText = document.getElementById("animated-services");
+    const serviceBtn1 = document.getElementById("service1-btn");
+    const serviceBtn2 = document.getElementById("service2-btn");
+    const serviceBtn3 = document.getElementById("service3-btn");
+    const serviceBtn4 = document.getElementById("service4-btn");
+    const serviceBtn5 = document.getElementById("service5-btn");
 
     function animateText(element, newText) {
         if (!element) return; // Prevent errors if the element is missing
@@ -36,4 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
         animateText(animatedContactText, "Jakyz.Mamba@MambaAutomize.com");
     });
 
+    serviceBtn1?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+    });
+    serviceBtn2?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+    });
+    serviceBtn3?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+    });
+    serviceBtn4?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+    });
+    serviceBtn5?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedServiceText, "Jakyz.Mamba@MambaAutomize.com");
+    });
 });
