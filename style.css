@@ -559,8 +559,9 @@ body {
 /* Social Icons */
 .services-sci {
     position: absolute;
+    left: 50px;
     bottom: 40px;
-    width: 40px;
+    width: 170px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
