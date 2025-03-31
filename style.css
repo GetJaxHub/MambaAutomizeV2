@@ -502,8 +502,7 @@ body {
     background-size: cover;
     background-position: center;
     display:flex;
-    align-items: top;
-    justify-content: flex-end;
+    align-items: center;
     padding: 0 10%;
 }
 
@@ -528,6 +527,41 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
+}   
+.services-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0
+}
+    
+.services-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .8s;
+}
+.services-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.services-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
 }   
 
 .services-content .btn-box {
