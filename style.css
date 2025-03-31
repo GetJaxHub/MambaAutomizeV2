@@ -852,6 +852,22 @@ body {
     width: 100%;
 }
 
+/* About Part */
+
+.careers {
+    height: 100vh;
+    background: url('images/WIP_Page.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10%;
+}
+
+.careers-content {
+    max-width: 600px;
+}
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
