@@ -3,15 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const optimizeBtn = document.getElementById("optimize-btn");
     const animatedText = document.getElementById("animated-text");
 
-    automateBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        animatedText.textContent = "Unlock efficiency with AI-driven automation!";
+    function animateText(text) {
+        animatedText.classList.remove("show"); // Reset animation
+        void animatedText.offsetWidth; // Reflow hack
+        animatedText.textContent = text;
         animatedText.classList.add("show");
+    }
+
+    automateBtn.addEventListener("click", function () {
+        animateText("Unlock efficiency with AI-driven automation!");
     });
 
-    optimizeBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        animatedText.textContent = "Streamline workflows for maximum productivity!";
-        animatedText.classList.add("show");
+    optimizeBtn.addEventListener("click", function () {
+        animateText("Streamline workflows for maximum productivity!");
     });
 });
