@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const automateBtn = document.getElementById("automate-btn");
     const optimizeBtn = document.getElementById("optimize-btn");
     const animatedText = document.getElementById("animated-home");
-    const missionBtn = document.getElementById("mission-btn"); // Fix: Lowercase 'm'
-    const animatedAbout = document.getElementById("animated-about");
 
     function animateText(element, newText) {
         if (!element) return; // Prevent errors if the element is missing
@@ -25,8 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
         animateText(animatedText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit for your business!");
     });
 
-    missionBtn?.addEventListener("click", function (event) {
-        event.preventDefault();
-        animateText(animatedAbout, "We, at MambaAutomize, are on a mission to help businesses streamline operations, reduce costs, and improve efficiency through tailored automation and process improvement solutions. Let us help you unlock your business’s full potential.");
-    });
 });
