@@ -698,37 +698,7 @@ body {
 .services-sci a:hover::before {
     width: 100%;
 }
-
-.services-imgHover {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    width: 600px;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-    animation: manipActiveHover .1s forwards;
-    animation-delay: 4s;
-    pointer-events: none;
-}
-
-.services-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.4s;
-    z-index: 100;
-}
-.services-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
-}
-   
+ 
 
 /* Contact */
 
