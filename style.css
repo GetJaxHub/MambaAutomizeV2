@@ -513,8 +513,8 @@ body {
     background: url('images/Services.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display:flex;
-    align-items: center;
+    display:grid;
+    align-items: top;
     justify-content: flex-end;
     padding: 0 10%;
 }
