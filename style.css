@@ -501,8 +501,8 @@ body {
 
 .services-content h1 {
     position: absolute;
-    top: 20px; /* Adjust to move lower if needed */
-    right: 50px; /* Moves the h1 to the right */
+    top: 150px; /* Adjust to move lower if needed */
+    right: 800px; /* Moves the h1 to the right */
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
