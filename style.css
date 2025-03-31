@@ -577,7 +577,7 @@ body {
     animation-delay: 1.5s;
 }    
 
-.about-sci {
+.services-sci {
     position: absolute;
     bottom: 40px;
     width: 170px;
@@ -585,7 +585,7 @@ body {
     justify-content: space-between;
 }
 
-.about-sci::before {
+.services-sci::before {
     content: '';
     position: absolute;
     top: 0;
@@ -597,7 +597,7 @@ body {
     animation-delay: 2.0s;
     z-index: 2;
 }
-.about-sci a {
+.services-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -615,11 +615,11 @@ body {
     transition: .5s;
 }
 
-.about-sci a:hover {
+.services-sci a:hover {
     color: #081b29;
 }
 
-.about-sci a::before {
+.services-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -631,7 +631,7 @@ body {
     transition: .5s;
 }
 
-.about-sci a:hover::before {
+.services-sci a:hover::before {
     width: 100%;
 }
 
