@@ -433,6 +433,20 @@ body {
 
 }
 
+/* Animated Text */
+#animated-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#animated-text.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .about-sci {
     position: absolute;
     bottom: 40px;
@@ -490,22 +504,6 @@ body {
 .about-sci a:hover::before {
     width: 100%;
 }
-
-#animated-text {
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.5s ease-in-out;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 20px;
-}
-
-.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
