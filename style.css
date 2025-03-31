@@ -520,7 +520,7 @@ body {
     animation-delay: .4s;
 }   
 .services-content h3 {
-    position: relative;
+    position: absolute;
     font-size: 32px;
     font-weight: 700;
     color: #00abf0
@@ -539,7 +539,7 @@ body {
 }    
 
 .services-content .btn-box {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 345px;
@@ -559,7 +559,7 @@ body {
     z-index: 2;
 }
 .btn-box a {
-    position: relative;
+    position: absolute;
     display: inline-flex;
     justify-content: center;
     align-items: center;
