@@ -562,17 +562,13 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
-}   
-
+}    
 .services-content .btn-box {
     position: relative;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Align them in the center (optional) */
-    align-items: center; /* Center them horizontally */
+    justify-content: space-between;
     width: 345px;
-    gap: 10px; /* Adds space between buttons */
-    
+    height: 50px;
 }
 
 .services-content .btn-box::before {
@@ -586,6 +582,62 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 1.7s;
     z-index: 2;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color:#00abf0;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+
+/* Animated Text */
+#animated-services {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#animated-services.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .services-sci {
@@ -646,20 +698,36 @@ body {
     width: 100%;
 }
 
-/* Animated Text */
-#animated-services {
-    position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+.services-imgHover {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 600px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
 }
 
-#animated-services.show {
-    opacity: 1;
-    transform: translateX(0);
+.services-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.4s;
+    z-index: 100;
 }
+.services-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
+}
+   
 
 /* Contact */
 
