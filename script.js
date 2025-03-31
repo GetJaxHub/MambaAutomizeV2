@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const automateBtn = document.getElementById("automate-btn");
     const optimizeBtn = document.getElementById("optimize-btn");
-    const animatedText = document.getElementById("animated-home");
+    const animatedHomeText = document.getElementById("animated-home");
     const whatsappBtn = document.getElementById("whatsapp-btn");
     const emailBtn = document.getElementById("email-btn");
-    const animatedText = document.getElementById("animated-contact");
+    const animatedContactText = document.getElementById("animated-contact");
 
     function animateText(element, newText) {
         if (!element) return; // Prevent errors if the element is missing
@@ -18,21 +18,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     automateBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedText, "Unlock efficiency with process or AI-driven automation!");
+        animateText(animatedHomeText, "Unlock efficiency with process or AI-driven automation!");
     });
 
     optimizeBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit for your business!");
+        animateText(animatedHomeText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit your business!");
     });
-     whatsappBtn?.addEventListener("click", function (event) {
+
+    whatsappBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedText, "+63923-7341224");
+        animateText(animatedContactText, "+63923-7341224");
     });
 
     emailBtn?.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText(animatedText, "Jakyz.Mamba@mambaautomize.com");
+        animateText(animatedContactText, "Jakyz.Mamba@mambaautomize.com");
     });
 
 });
