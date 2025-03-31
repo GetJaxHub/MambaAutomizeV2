@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const automateBtn = document.getElementById("automate-btn");
     const optimizeBtn = document.getElementById("optimize-btn");
     const animatedText = document.getElementById("animated-home");
+    const whatsappBtn = document.getElementById("whatsapp-btn");
+    const emailBtn = document.getElementById("email-btn");
+    const animatedText = document.getElementById("animated-contact");
 
     function animateText(element, newText) {
         if (!element) return; // Prevent errors if the element is missing
@@ -21,6 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
     optimizeBtn?.addEventListener("click", function (event) {
         event.preventDefault();
         animateText(animatedText, "Streamline workflows for maximum productivity with our process improvement or custom solutions tailored to fit for your business!");
+    });
+     whatsappBtn?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedText, "+63923-7341224");
+    });
+
+    emailBtn?.addEventListener("click", function (event) {
+        event.preventDefault();
+        animateText(animatedText, "Jakyz.Mamba@mambaautomize.com");
     });
 
 });
