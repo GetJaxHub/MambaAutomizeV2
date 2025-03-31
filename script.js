@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Your existing code
     const automateBtn = document.getElementById("automate-btn");
     const optimizeBtn = document.getElementById("optimize-btn");
     const animatedHomeText = document.getElementById("animated-home");
@@ -36,32 +35,4 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         animateText(animatedContactText, "Jakyz.Mamba@MambaAutomize.com");
     });
-
-    // Mobile menu functionality
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    
-    // Only proceed if mobile menu elements exist
-    if (menuToggle && navbar) {
-        const closeBtn = document.createElement('div');
-        closeBtn.className = 'close-btn';
-        closeBtn.innerHTML = '&times;';
-        navbar.appendChild(closeBtn);
-        
-        menuToggle.addEventListener('click', function() {
-            navbar.classList.add('active');
-        });
-        
-        closeBtn.addEventListener('click', function() {
-            navbar.classList.remove('active');
-        });
-        
-        // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.navbar a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navbar.classList.remove('active');
-            });
-        });
-    }
 });
