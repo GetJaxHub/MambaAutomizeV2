@@ -846,14 +846,16 @@ body {
     max-width: 600px;
 }
 
-.careers-content h1 {
+.careers-content h3 {
     position: relative;
-    font-size: 56px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
+    color: #00abf0
+
 }
 
-.careers-content h1::before {
+.careers-content h3::before {
     content: '';
     position: absolute;
     top: 0;
