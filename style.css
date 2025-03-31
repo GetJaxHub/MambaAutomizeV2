@@ -779,6 +779,21 @@ body {
 
 }
 
+/* Animated Text */
+#animated-contact {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#animated-contact.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .contact-sci {
     position: absolute;
     bottom: 40px;
