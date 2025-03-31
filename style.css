@@ -490,15 +490,14 @@ body {
     background-size: cover;
     background-position: center;
     display:flex;
-    align-items: center;
     justify-content: flex-end;
     padding: 0 10%;
 }
 
 .services-content {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    text-align: center;
+    text-align: right;
     overflow-wrap: break-word;
     max-width: 600px;
 }
