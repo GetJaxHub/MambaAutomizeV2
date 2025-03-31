@@ -201,6 +201,21 @@ body {
 
 }
 
+/* Animated Text */
+#animated-home {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#animated-home.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -431,20 +446,6 @@ body {
 .btn-box a:hover::before {
     width: 100%;
 
-}
-
-/* Animated Text */
-#animated-text {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-#animated-text.show {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .about-sci {
