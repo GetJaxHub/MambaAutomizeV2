@@ -1,5 +1,167 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Add this at the top of your CSS */
+@media (max-width: 1200px) {
+    .home-imgHover {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 3%;
+    }
+    
+    section {
+        padding: 0 3%;
+    }
+    
+    .home-content,
+    .about-content,
+    .contact-content,
+    .careers-content {
+        padding-top: 80px;
+    }
+    
+    .home-sci,
+    .about-sci,
+    .contact-sci,
+    .careers-sci {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h1,
+    .about-content h1,
+    .contact-content h1 {
+        font-size: 40px;
+    }
+    
+    .home-content h3,
+    .about-content h3,
+    .contact-content h3,
+    .careers-content h3 {
+        font-size: 24px;
+    }
+    
+    .btn-box {
+        width: 100% !important;
+        flex-direction: column;
+        height: auto !important;
+    }
+    
+    .btn-box a {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .service-card {
+        max-width: 100% !important;
+    }
+    
+    .home-sci,
+    .about-sci,
+    .contact-sci,
+    .careers-sci {
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    
+    .home-content h1,
+    .about-content h1,
+    .contact-content h1 {
+        font-size: 32px;
+    }
+    
+    .home-content p,
+    .about-content p,
+    .contact-content p {
+        font-size: 14px;
+    }
+    
+    .home,
+    .about,
+    .services,
+    .contact,
+    .careers {
+        background-position: right;
+        text-align: center;
+    }
+    
+    .home-content,
+    .about-content,
+    .contact-content,
+    .careers-content {
+        margin: 0 auto;
+    }
+    
+    .home-sci,
+    .about-sci,
+    .contact-sci,
+    .careers-sci {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+/* Add this to make sure images don't overflow on mobile */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure all sections take full viewport height */
+section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Make sure content doesn't get too wide on larger screens */
+.home-content,
+.about-content,
+.contact-content,
+.careers-content,
+.services-content {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Adjust services section for mobile */
+@media (max-width: 768px) {
+    .services {
+        height: auto;
+        padding: 80px 0;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
