@@ -509,12 +509,12 @@ body {
 /* Services Part */
 
 .services {
-    min-height: 100vh;
-    background: url('images/Services.png') no-repeat;
+    height: 100vh;
+    background: url('images/AboutCEO2.png') no-repeat;
     background-size: cover;
     background-position: center;
-    display:grid;
-    align-items: top;
+    display:flex;
+    align-items: center;
     justify-content: flex-end;
     padding: 0 10%;
 }
@@ -525,8 +525,6 @@ body {
 
 .services-content h1 {
     position: relative;
-    top: 30%;
-    left: 50%;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
@@ -535,7 +533,7 @@ body {
 .services-content h1::before {
     content: '';
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 0;
     width: 100%;
     height: 100%;
@@ -578,6 +576,26 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay: 1.5s;
 }    
+.services-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.services-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
+    z-index: 2;
+}
 
 .services-sci {
     position: absolute;
