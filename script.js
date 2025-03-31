@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     automateBtn.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText("Unlock efficiency with AI-driven automation!");
+        animateText("Unlock efficiency with process or AI-driven automation!");
     });
 
     optimizeBtn.addEventListener("click", function (event) {
         event.preventDefault();
-        animateText("Streamline workflows for maximum productivity!");
+        animateText("Streamline workflows for maximum productivity with our process improvement or custom solutions tailored fit with your business!");
     });
 });
