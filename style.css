@@ -560,7 +560,7 @@ body {
 .services-sci {
     position: absolute;
     bottom: 40px;
-    width: 170px;
+    width: 40px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
